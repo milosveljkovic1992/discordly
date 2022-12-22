@@ -23,12 +23,12 @@ const postRegister = async (req, res) => {
 		});
 
 		// create JWT token
-		const token = 'JWT TOKEN';
+		const token = 'JWT_TOKEN';
 
 		res.status(201).json({
 			userDetails: {
 				mail: user.mail,
-				token: token,
+				token,
 				username: user.username,
 			},
 		});
