@@ -1,1 +1,1 @@
-const authActions = {};
+export const authActions = {};

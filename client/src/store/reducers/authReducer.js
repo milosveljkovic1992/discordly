@@ -2,7 +2,7 @@ const initialState = {
 	userDetails: null,
 };
 
-const reducer = (state = initialState, action) => {
+export const authReducer = (state = initialState, action) => {
 	switch (action.type) {
 		case 'DUMMY':
 			return {
@@ -12,5 +12,3 @@ const reducer = (state = initialState, action) => {
 			return state;
 	}
 };
-
-export default reducer;
