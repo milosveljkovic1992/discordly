@@ -49,5 +49,3 @@ export const InputWithLabel = ({
 		</Wrapper>
 	);
 };
-
-export default InputWithLabel;

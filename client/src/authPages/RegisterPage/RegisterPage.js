@@ -1,7 +1,5 @@
-import AuthBox from '../../shared/components/AuthBox';
+import { AuthBox } from '../../shared/components/AuthBox';
 
-const RegisterPage = () => {
+export const RegisterPage = () => {
 	return <AuthBox>RegisterPage</AuthBox>;
 };
-
-export default RegisterPage;

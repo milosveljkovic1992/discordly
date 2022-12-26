@@ -1,5 +1,5 @@
 import React from 'react';
-import InputWithLabel from '../../shared/components/InputWithLabel';
+import { InputWithLabel } from '../../shared/components/InputWithLabel';
 
 export const LoginPageInputs = ({ mail, setMail, password, setPassword }) => {
 	return (
@@ -21,5 +21,3 @@ export const LoginPageInputs = ({ mail, setMail, password, setPassword }) => {
 		</>
 	);
 };
-
-export default LoginPageInputs;

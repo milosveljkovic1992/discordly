@@ -1,6 +1,6 @@
 import { Typography } from '@mui/material';
 
-const LoginPageHeader = () => {
+export const LoginPageHeader = () => {
 	return (
 		<>
 			<Typography variant='h5' sx={{ color: 'white' }}>
@@ -12,5 +12,3 @@ const LoginPageHeader = () => {
 		</>
 	);
 };
-
-export default LoginPageHeader;

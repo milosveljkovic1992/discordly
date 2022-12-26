@@ -10,7 +10,7 @@ const BoxWrapper = styled('div')({
 	background: '#5865F2',
 });
 
-const AuthBox = ({ children }) => {
+export const AuthBox = ({ children }) => {
 	return (
 		<BoxWrapper>
 			<Box
@@ -30,5 +30,3 @@ const AuthBox = ({ children }) => {
 		</BoxWrapper>
 	);
 };
-
-export default AuthBox;
