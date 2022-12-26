@@ -1,17 +1,23 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import { AuthBox } from '../../shared/components/AuthBox';
 import { LoginPageFooter } from './LoginPageFooter';
 import { LoginPageHeader } from './LoginPageHeader';
 import { LoginPageInputs } from './LoginPageInputs';
+import { validateLoginForm } from '../../shared/utils/validators';
 
 export const LoginPage = () => {
 	const [mail, setMail] = useState('');
 	const [password, setPassword] = useState('');
 	const [isFormValid, setIsFormValid] = useState(false);
 
+	useEffect(() => {
+		setIsFormValid(validateLoginForm({ mail, password }));
+	}, [mail, password, setIsFormValid]);
+
 	const handleLogin = () => {
-		console.log('logging in');
+		console.log(mail);
+		console.log(password);
 	};
 
 	return (
