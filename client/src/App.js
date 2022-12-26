@@ -5,13 +5,17 @@ import {
 	Navigate,
 } from 'react-router-dom';
 
+import LoginPage from './authPages/LoginPage/LoginPage';
+import RegisterPage from './authPages/RegisterPage/RegisterPage';
+import Dashboard from './Dashboard/Dashboard';
+
 function App() {
 	return (
 		<Router>
 			<Routes>
-				<Route path='/login' element={<h1>Login</h1>} />
-				<Route path='/register' element={<h1>Register</h1>} />
-				<Route path='/dashboard' element={<h1>Dashboard</h1>} />
+				<Route path='/login' element={<LoginPage />} />
+				<Route path='/register' element={<RegisterPage />} />
+				<Route path='/dashboard' element={<Dashboard />} />
 				<Route path='*' element={<Navigate to='/dashboard' />} />
 			</Routes>
 		</Router>
