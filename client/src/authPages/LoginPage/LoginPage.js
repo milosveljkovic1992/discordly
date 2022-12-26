@@ -1,5 +1,7 @@
+import AuthBox from '../../shared/components/AuthBox';
+
 const LoginPage = () => {
-	return <div>LoginPage</div>;
+	return <AuthBox>LoginPage</AuthBox>;
 };
 
 export default LoginPage;
