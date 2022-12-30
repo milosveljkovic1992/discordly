@@ -1,3 +1,23 @@
+import { styled } from '@mui/system';
+
+import { Sidebar } from './Sidebar/Sidebar';
+import { FriendsSidebar } from './FriendsSidebar/FriendsSidebar';
+import { Messenger } from './Messenger/Messenger';
+import { AppBar } from './AppBar/AppBar';
+
+const Wrapper = styled('div')({
+	width: '100%',
+	height: '100vh',
+	display: 'flex',
+});
+
 export const Dashboard = () => {
-	return <div>Dashboard</div>;
+	return (
+		<Wrapper>
+			<Sidebar />
+			<FriendsSidebar />
+			<Messenger />
+			<AppBar />
+		</Wrapper>
+	);
 };

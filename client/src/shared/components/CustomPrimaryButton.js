@@ -1,4 +1,4 @@
-import Button from '@mui/material/Button';
+import { Button } from '@mui/material';
 
 export const CustomPrimaryButton = ({
 	label,
