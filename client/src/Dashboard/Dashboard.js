@@ -4,6 +4,7 @@ import { styled } from '@mui/system';
 import { connect } from 'react-redux';
 
 import { getActions } from '../store/actions/authActions';
+import { connectWithSocketServer } from '../realtimeCommunication/socketConnection';
 import { logout } from '../shared/utils/auth';
 import { Sidebar } from './Sidebar/Sidebar';
 import { FriendsSidebar } from './FriendsSidebar/FriendsSidebar';
@@ -24,8 +25,9 @@ const Dashboard = ({ setUserDetails }) => {
 			logout();
 		} else {
 			setUserDetails(JSON.parse(userDetails));
+			connectWithSocketServer();
 		}
-	}, []);
+	}, [setUserDetails]);
 
 	return (
 		<Wrapper>
